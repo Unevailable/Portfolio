@@ -1,5 +1,11 @@
 /* src/components/Contact.module.css */
 
+.contact h2 {
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+  }
+
 .contact {
     display: flex;
     flex-direction: column;
