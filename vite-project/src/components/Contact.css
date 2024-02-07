@@ -1,0 +1,44 @@
+/* src/components/Contact.module.css */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300%;
+  }
+  
+  .contact label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact .input,
+  .contact .textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact .button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .contact .button:hover {
+    background-color: #592253;
+  }

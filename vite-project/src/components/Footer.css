@@ -1,0 +1,21 @@
+/* src/components/Footer.module.css */
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+main {
+  padding: 20px;
+  margin-top: auto;
+}

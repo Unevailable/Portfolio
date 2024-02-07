@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 const AboutMePage = () => {
   return (
-    <div className="page">
+    <div>
       <Header />
       <AboutMe />
       <Footer />
