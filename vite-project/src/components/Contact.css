@@ -1,11 +1,13 @@
-/* src/components/Contact.module.css */
+/* CSS styles for the Contact section */
 
+/* Style for the heading within the Contact section */
 .contact h2 {
     position: relative;
     bottom: 30px;
     left: 10px;
-  }
+}
 
+/* Style for the overall Contact section container */
 .contact {
     display: flex;
     flex-direction: column;
@@ -15,27 +17,31 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin-bottom: 20px;
-  }
-  
-  .contact form {
+}
+
+/* Style for the form within the Contact section */
+.contact form {
     display: flex;
     flex-direction: column;
     width: 300%;
-  }
-  
-  .contact label {
+}
+
+/* Style for labels within the Contact form */
+.contact label {
     font-weight: bold;
     margin-bottom: 5px;
-  }
-  
-  .contact .input,
-  .contact .textarea {
+}
+
+/* Style for input fields and textareas within the Contact form */
+.contact .input,
+.contact .textarea {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
-  
-  .contact .button {
+}
+
+/* Style for the submit button within the Contact form */
+.contact .button {
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -43,8 +49,9 @@
     border: none;
     cursor: pointer;
     margin-top: 10px;
-  }
-  
-  .contact .button:hover {
+}
+
+/* Hover effect for the submit button within the Contact form */
+.contact .button:hover {
     background-color: #592253;
-  }
+}

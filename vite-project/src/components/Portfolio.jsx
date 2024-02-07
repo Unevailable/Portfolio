@@ -1,8 +1,10 @@
-// src/components/Portfolio.jsx
+// Importing React and the CSS module for styling
 import React from 'react';
 import './Portfolio.css';
 
+// Functional component for the Portfolio section
 const Portfolio = () => {
+  // Sample project data
   const projects = [
     {
       id: 1,
@@ -44,19 +46,28 @@ const Portfolio = () => {
 
   return (
     <section className="portfolio">
+      {/* Heading for the Portfolio section */}
       <h2>Portfolio</h2>
+      
+      {/* Grid layout for projects, divided into two columns */}
       <div className="projects">
+        {/* First column of projects */}
         <div className="project-column">
           {projects.slice(0, 2).map((project) => (
             <div key={project.id} className="project-card">
+              {/* Project image */}
               <img src={project.image} alt={project.name} />
+              {/* Project name */}
               <h3>{project.name}</h3>
+              {/* Project description */}
               <p>{project.description}</p>
+              {/* List of project languages */}
               <ul>
                 {project.languages.map((language) => (
                   <li key={language}>{language}</li>
                 ))}
               </ul>
+              {/* Buttons section with links to GitHub Repo and project site */}
               <div className="buttons">
                 <a href={project.github} target="_blank" rel="noreferrer">
                   Visit GitHub Repo
@@ -68,17 +79,24 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+        
+        {/* Second column of projects */}
         <div className="project-column">
           {projects.slice(2, 4).map((project) => (
             <div key={project.id} className="project-card">
+              {/* Project image */}
               <img src={project.image} alt={project.name} />
+              {/* Project name */}
               <h3>{project.name}</h3>
+              {/* Project description */}
               <p>{project.description}</p>
+              {/* List of project languages */}
               <ul>
                 {project.languages.map((language) => (
                   <li key={language}>{language}</li>
                 ))}
               </ul>
+              {/* Buttons section with links to GitHub Repo and project site */}
               <div className="buttons">
                 <a href={project.github} target="_blank" rel="noreferrer">
                   Visit GitHub Repo
@@ -95,4 +113,5 @@ const Portfolio = () => {
   );
 };
 
+// Exporting the Portfolio component for use in other parts of the application
 export default Portfolio;

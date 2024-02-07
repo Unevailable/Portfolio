@@ -1,11 +1,8 @@
-/* src/components/Header.module.css */
-
 body {
   margin: 0;
-  padding-top: 80px; /* Adjust this value based on your header's height */
-
 }
 
+/* Styling for the header */
 header {
   position: fixed;
   right: 0;
@@ -19,15 +16,17 @@ header {
   z-index: 100;
   width: 100%;
   max-width: none;
-  box-sizing: border-box; /* Include padding and borders in the total width */
+  box-sizing: border-box; 
 }
 
+/* Styling for the heading within the header */
 h1 {
   color: #fff;
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
+/* Styling for the navigation menu */
 nav {
   display: flex;
   justify-content: space-between;
@@ -36,6 +35,7 @@ nav {
   max-width: 600px;
 }
 
+/* Styling for navigation links */
 nav a {
   color: white;
   text-decoration: none;
@@ -44,16 +44,20 @@ nav a {
   transition: background-color 0.3s ease;
   border-bottom: 1px solid transparent;
 
+  /* Hover effect for navigation links */
   &:hover {
     background-color: #555;
     border-bottom-color: #fff;
   }
 }
 
+/* Media query for responsiveness at smaller screen sizes */
 @media (max-width: 767.98px) {
+  /* Adjusting the layout for navigation at smaller screens */
   nav {
     flex-direction: column;
   }
+  /* Adjusting styling for navigation links at smaller screens */
   nav a {
     padding: 10px;
     border-bottom: 1px solid #fff;
