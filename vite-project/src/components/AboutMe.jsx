@@ -9,7 +9,8 @@ const AboutMe = () => {
   return (
     <section className={style.aboutMe}>
       {/* Heading for the About Me section */}
-      <h2 className={style.heading}>About Me</h2>
+    <h2 className={style.heading}>About Me</h2>
+
 
       {/* Container for text and image */}
       <div className={style.textContainer}>

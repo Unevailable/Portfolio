@@ -1,0 +1,48 @@
+.resume-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  
+  h2 {
+    position: relative;
+    top: 5px;
+    left: 79.5vh;
+    margin-bottom: 20px;
+  }
+  
+  .resume-subheading {
+    position: relative;
+    top: 15vh;
+    left: 41.5vh;
+    margin-bottom: 20px;
+  }
+  
+  .resume-backend {
+    position: relative;
+    bottom: 15vh;
+    left: 15vh;
+  }
+
+  .resume-frontend {
+    position: relative;
+    bottom: 15vh;
+    left: 15vh;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+
+    .backend-skills-section {
+        position: relative;
+        left: 65vh;
+    }
+
+    .frontend-skills-section {
+        position: relative;
+        left: 45vh;
+    }
