@@ -20,7 +20,7 @@ const AboutMe = () => {
         </p>
 
         {/* Image of the individual */}
-        <img src="./public/Al.JPG" alt="Photo of Al Amin" className={style.photo} />
+        <img src="./Al.JPG" alt="Photo of Al Amin" className={style.photo} />
       </div>
     </section>
   );

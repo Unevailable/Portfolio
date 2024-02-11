@@ -50,6 +50,24 @@ footer {
     flex-direction: column;
 }
 
+
+
+  
+  .project-card .languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card .languages li {
+    background-color: #e1e1e1;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+  }
+
 /* Hover effect for project cards */
 .project-card:hover {
     transform: scale(1.05);
@@ -71,8 +89,15 @@ footer {
     color: black;
 }
 
+
+
+
 /* Styling for project card paragraphs */
 .project-card p {
+    margin: 20px;
+    position: relative;
+    left: 0px;
+    text-align: center;
     color: black;
 }
 

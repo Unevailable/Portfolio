@@ -8,30 +8,30 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      name: 'Project 1',
+      name: 'My Media Favorites',
       image: 'https://via.placeholder.com/150',
-      description: 'This is a description of project 1.',
+      description: 'A web application designed to allow a user to pick any movie or book they choose to search for, display some general information about the searched piece of media, and then allow the user to add the media to either their favorite book or favorite movie list. This data is then saved and persisted over local storage.',
       languages: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/user/repo1',
-      site: 'https://example.com/project1',
+      github: 'https://github.com/mforte215/my-media-library',
+      site: 'https://mforte215.github.io/my-media-library/',
     },
     {
       id: 2,
-      name: 'Project 2',
-      image: 'https://via.placeholder.com/150',
-      description: 'This is a description of project 2.',
-      languages: ['React', 'Node.js', 'Express'],
-      github: 'https://github.com/user/repo2',
-      site: 'https://example.com/project2',
+      name: 'The Birds of Freedom',
+      image: '../freedom.PNG',
+      description: 'The main focus of this website is to inform people about the Bangladesh Liberation War These are where I got a great majority of my photos from',
+      languages: ['HTML', 'CSS', 'JavaScript'],
+      github: 'https://github.com/Unevailable/TheBirdsOfFreedom',
+      site: 'https://unevailable.github.io/TheBirdsOfFreedom/index.html',
     },
     {
       id: 3,
-      name: 'Project 3',
+      name: 'Demo Swap',
       image: 'https://via.placeholder.com/150',
-      description: 'This is a description of project 3.',
-      languages: ['Python', 'Django'],
-      github: 'https://github.com/user/repo3',
-      site: 'https://example.com/project3',
+      description: 'Demo Swap is a unique trading platform, made for Team Fortress 2 players/collectors to find other players looking to trade in-game items.',
+      languages: ['TypeScript', 'SQL', 'MySQL', 'Node', 'Express','Handlebars', 'CSS', 'JavaScript' ],
+      github: 'https://github.com/ryansauter88/demo-swap',
+      site: 'https://demo-swap-354ed4292240.herokuapp.com/',
     },
     {
       id: 4,
@@ -62,9 +62,9 @@ const Portfolio = () => {
               {/* Project description */}
               <p>{project.description}</p>
               {/* List of project languages */}
-              <ul>
-                {project.languages.map((language) => (
-                  <li key={language}>{language}</li>
+              <ul class="languages">
+                {project.languages.map((language, i) => (
+                  <li key={i}>{language}</li>
                 ))}
               </ul>
               {/* Buttons section with links to GitHub Repo and project site */}
@@ -91,9 +91,9 @@ const Portfolio = () => {
               {/* Project description */}
               <p>{project.description}</p>
               {/* List of project languages */}
-              <ul>
-                {project.languages.map((language) => (
-                  <li key={language}>{language}</li>
+              <ul class="languages">
+                {project.languages.map((language, i) => (
+                  <li key={i}>{language}</li>
                 ))}
               </ul>
               {/* Buttons section with links to GitHub Repo and project site */}
