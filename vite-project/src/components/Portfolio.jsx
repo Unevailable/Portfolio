@@ -9,7 +9,7 @@ const Portfolio = () => {
     {
       id: 1,
       name: 'My Media Favorites',
-      image: 'https://via.placeholder.com/150',
+      image: '../freedom.PNG',
       description: 'A web application designed to allow a user to pick any movie or book they choose to search for, display some general information about the searched piece of media, and then allow the user to add the media to either their favorite book or favorite movie list. This data is then saved and persisted over local storage.',
       languages: ['HTML', 'CSS', 'JavaScript'],
       github: 'https://github.com/mforte215/my-media-library',
@@ -36,11 +36,11 @@ const Portfolio = () => {
     {
       id: 4,
       name: 'Project 4',
-      image: 'https://via.placeholder.com/150',
+      image: '/freedom.PNG',
       description: 'This is a description of project 4.',
-      languages: ['PHP', 'Laravel'],
-      github: 'https://github.com/user/repo4',
-      site: 'https://example.com/project4',
+      languages: ['MERN Stack'],
+      github: 'https://github.com/Unevailable/Book-Search-Engine?tab=readme-ov-file',
+      site: 'https://book-library-fe.netlify.app',
     },
   ];
 
