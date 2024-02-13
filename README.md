@@ -1,12 +1,13 @@
 # Portfolio
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen)](https://opensource.org/licenses/MIT)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b5c0115e-2e56-4def-88fb-ba40cfdc41f8/deploy-status)](https://app.netlify.com/sites/alamin03-portfolio/deploys)
 
 
 ## Description
 This is a React Portfolio designed to keep a history of Al Amin's projects and accomplishments.
 
 ## Preview of The Program
-[Portfolio Website](https://book-library-fe.netlify.app)
+[Portfolio Website](https://main--alamin03-portfolio.netlify.app)
 ![Preview of the Website](./vite-project/public/1a.PNG)
 ![Preview of the Website](./vite-project/public/2a.PNG)
 ![Preview of the Website](./vite-project/public/3a.PNG)
@@ -22,7 +23,7 @@ This is a React Portfolio designed to keep a history of Al Amin's projects and a
 
 ## Installation
 * Use Vite and choose react
-* Nest npm I
+* Next npm I
 * Lastly npm run dev
 
 ## Usage
