@@ -7,6 +7,11 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 
+render(
+  <StrictApp />,
+  document.getElementById('root')
+);
+
 function App() {
   return (
     <Router>
