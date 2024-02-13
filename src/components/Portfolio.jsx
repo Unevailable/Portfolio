@@ -35,9 +35,9 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      name: 'Project 4',
+      name: 'Book Search Engine',
       image: '/freedom.PNG',
-      description: 'This is a description of project 4.',
+      description: 'This is a MERN Full-Stack application designed to keep a book library of a users saved/favorited books.',
       languages: ['MERN Stack'],
       github: 'https://github.com/Unevailable/Book-Search-Engine?tab=readme-ov-file',
       site: 'https://book-library-fe.netlify.app',
