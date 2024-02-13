@@ -7,11 +7,6 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 
-render(
-  <StrictApp />,
-  document.getElementById('root')
-);
-
 function App() {
   return (
     <Router>
@@ -29,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;  // Export the App component as the default export
