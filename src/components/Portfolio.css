@@ -11,6 +11,12 @@ footer {
     margin-top: 200px; 
 }
 
+.heading-2 {
+ position: relative;
+ left: 45vh; 
+ text-align: center;
+}
+
 /* Styling for the main portfolio section */
 .portfolio {
     display: flex;
@@ -74,10 +80,10 @@ footer {
 }
 
 /* Styling for project card images */
-.project-card img {
+.project-image {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    max-width: 100%; /* Ensure the image doesn't exceed its natural size */
+    height: auto;    /* Maintain the aspect ratio */
     border-bottom: 2px solid #e1e1e1;
 }
 

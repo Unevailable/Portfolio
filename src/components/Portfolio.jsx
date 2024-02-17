@@ -9,7 +9,7 @@ const Portfolio = () => {
     {
       id: 1,
       name: 'My Media Favorites',
-      image: '../freedom.PNG',
+      image: '../my-media-fav-screenshot.png',
       description: 'A web application designed to allow a user to pick any movie or book they choose to search for, display some general information about the searched piece of media, and then allow the user to add the media to either their favorite book or favorite movie list. This data is then saved and persisted over local storage.',
       languages: ['HTML', 'CSS', 'JavaScript'],
       github: 'https://github.com/mforte215/my-media-library',
@@ -19,7 +19,7 @@ const Portfolio = () => {
       id: 2,
       name: 'The Birds of Freedom',
       image: '../freedom.PNG',
-      description: 'The main focus of this website is to inform people about the Bangladesh Liberation War These are where I got a great majority of my photos from',
+      description: 'The main focus of this website is to inform people about the Bangladesh Liberation War. This frontend website was showcased at the 2022 Ctrl+Shift Finals',
       languages: ['HTML', 'CSS', 'JavaScript'],
       github: 'https://github.com/Unevailable/TheBirdsOfFreedom',
       site: 'https://unevailable.github.io/TheBirdsOfFreedom/index.html',
@@ -27,7 +27,7 @@ const Portfolio = () => {
     {
       id: 3,
       name: 'Demo Swap',
-      image: 'https://via.placeholder.com/150',
+      image: '../demo-swap.PNG',
       description: 'Demo Swap is a unique trading platform, made for Team Fortress 2 players/collectors to find other players looking to trade in-game items.',
       languages: ['TypeScript', 'SQL', 'MySQL', 'Node', 'Express','Handlebars', 'CSS', 'JavaScript' ],
       github: 'https://github.com/ryansauter88/demo-swap',
@@ -36,8 +36,8 @@ const Portfolio = () => {
     {
       id: 4,
       name: 'Book Search Engine',
-      image: '/freedom.PNG',
-      description: 'This is a MERN Full-Stack application designed to keep a book library of a users saved/favorited books.',
+      image: '/book.PNG',
+      description: 'This is a MERN Full-Stack application designed to keep a book library of a user\'s saved/favorited books.',
       languages: ['MERN Stack'],
       github: 'https://github.com/Unevailable/Book-Search-Engine?tab=readme-ov-file',
       site: 'https://book-library-fe.netlify.app',
@@ -47,7 +47,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio">
       {/* Heading for the Portfolio section */}
-      <h2>Portfolio</h2>
+      <h2 className="heading-2" >Portfolio</h2>
       
       {/* Grid layout for projects, divided into two columns */}
       <div className="projects">
@@ -56,13 +56,13 @@ const Portfolio = () => {
           {projects.slice(0, 2).map((project) => (
             <div key={project.id} className="project-card">
               {/* Project image */}
-              <img src={project.image} alt={project.name} />
+              <img src={project.image} alt={project.name} className="project-image" />
               {/* Project name */}
               <h3>{project.name}</h3>
               {/* Project description */}
               <p>{project.description}</p>
               {/* List of project languages */}
-              <ul class="languages">
+              <ul className="languages">
                 {project.languages.map((language, i) => (
                   <li key={i}>{language}</li>
                 ))}
@@ -85,13 +85,13 @@ const Portfolio = () => {
           {projects.slice(2, 4).map((project) => (
             <div key={project.id} className="project-card">
               {/* Project image */}
-              <img src={project.image} alt={project.name} />
+              <img src={project.image} alt={project.name} className="project-image" />
               {/* Project name */}
               <h3>{project.name}</h3>
               {/* Project description */}
               <p>{project.description}</p>
               {/* List of project languages */}
-              <ul class="languages">
+              <ul className="languages">
                 {project.languages.map((language, i) => (
                   <li key={i}>{language}</li>
                 ))}

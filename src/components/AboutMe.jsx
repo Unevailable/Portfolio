@@ -9,7 +9,7 @@ const AboutMe = () => {
   return (
     <section className={style.aboutMe}>
       {/* Heading for the About Me section */}
-    <h2 className={style.heading}>About Me</h2>
+    <h2 className="heading">About Me</h2>
 
 
       {/* Container for text and image */}
@@ -20,7 +20,7 @@ const AboutMe = () => {
         </p>
 
         {/* Image of the individual */}
-        <img src="./Al.JPG" alt="Photo of Al Amin" className={style.photo} />
+        <img src="./Al.JPG" alt="Photo of Al Amin" className="photo" />
       </div>
     </section>
   );

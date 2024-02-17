@@ -14,13 +14,13 @@ const Footer = () => {
       <div>
         {/* LinkedIn link with target="_blank" for opening in a new tab */}
         <a href="https://www.linkedin.com/in/al-amin-4229ab217/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
-          LinkedIn
+        <img src="./Linkdin.png" alt="Linkdin" className="iconLink2" />
         </a>
         
         {/* GitHub link with target="_blank" for opening in a new tab */}
         <span style={{ marginLeft: '20px' }}>
           <a href="https://github.com/Unevailable" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
-            GitHub
+          <img src="./GitHub.png" alt="Github" className="iconLink" />
           </a>
         </span>
       </div>

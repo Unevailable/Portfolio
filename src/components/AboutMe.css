@@ -40,9 +40,9 @@ section p {
 }
 
 /* Style for images within a section */
-section img {
+.photo {
   position: relative;
-  max-width: 40%; /* Set a maximum width for images */
+  width: 40%;
   height: auto; /* Maintain aspect ratio */
   left: 60vh; /* Adjusting the image position */
 }
