@@ -140,3 +140,24 @@ footer {
 .buttons a:hover {
     background-color: #d3d3d3;
 }
+
+/* Media query for responsive design below 768px */
+@media (max-width: 768px) {
+    .project-card {
+        width: 100%; /* Adjusted width for mobile */
+        left: 0; /* Reset the left position for mobile */
+        margin: 0 0 20px 0; /* Added margin for better spacing on mobile */
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem; /* Adjusted font size for mobile */
+    }
+
+    .project-card p {
+        font-size: 1rem; /* Adjusted font size for mobile */
+    }
+
+    .project-column {
+        gap: 20px; /* Adjusted gap for better spacing on mobile */
+    }
+}
