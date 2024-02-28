@@ -165,6 +165,9 @@ footer {
     }
 
     .projects {
+        display: flex; /* Change from grid to flex */
+        flex-direction: column; /* Display in one column */
+        align-items: center; /* Center align items */
         gap: 20px; /* Adjusted gap for better spacing on mobile */
     }
 
