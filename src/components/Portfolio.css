@@ -147,6 +147,7 @@ footer {
         width: 100%; /* Adjusted width for mobile */
         left: 0; /* Reset the left position for mobile */
         margin: 0 0 20px 0; /* Added margin for better spacing on mobile */
+        position: static; /* Reset position for mobile */
     }
 
     .project-card h3 {
@@ -155,9 +156,20 @@ footer {
 
     .project-card p {
         font-size: 1rem; /* Adjusted font size for mobile */
+        position: static; /* Reset position for mobile */
+        left: 0; /* Reset left position for mobile */
     }
 
     .project-column {
         gap: 20px; /* Adjusted gap for better spacing on mobile */
+    }
+
+    .projects {
+        gap: 20px; /* Adjusted gap for better spacing on mobile */
+    }
+
+    .buttons {
+        flex-direction: column; /* Adjusted to column for mobile */
+        align-items: center; /* Center align buttons on mobile */
     }
 }
