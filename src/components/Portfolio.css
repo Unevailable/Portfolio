@@ -143,6 +143,17 @@ footer {
 
 /* Media query for responsive design below 768px */
 @media (max-width: 768px) {
+
+    .heading-2 {
+        position: relative;
+        left: 0%; 
+        text-align: center;
+    }
+
+    .portfolio{
+        min-height: 335vh;
+    }
+    
     .project-card {
         width: 100%; /* Adjusted width for mobile */
         left: 0; /* Reset the left position for mobile */
