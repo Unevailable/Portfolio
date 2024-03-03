@@ -3,55 +3,35 @@ import "./Contact.css";
 
 export default function Contact() {
 
-  const handleSubmit = (event) => {
-    // Prevent the default form submission behavior
-    event.preventDefault();
+return <div>
+  <form 
+  name="contact info" 
+  method="post"
+  data-netlify="true"
+  onSubmit="submit"
+>
+  <input type="hidden" name="form-name" value="contact info"/>
 
-    // You can add additional logic here if needed
+  <div>
+    <label> Name <br />
+        <input type="text" name="name"/>
+    </label>
+  </div>
 
-    // Submit the form using Netlify Forms
-    const form = event.target;
-    fetch(form.action, {
-      method: "POST",
-      body: new FormData(form),
-    })
-      .then(() => alert("Form submitted successfully"))
-      .catch((error) => alert(error));
-  };
+  <div>
+    <label htmlFor="email"> Email </label> <br />
+        <input id="email" type="email" name="email"/>
+  </div>
 
-  return (
-    <div>
-      <form
-        name="contact info"
-        method="post"
-        action=""
-        onSubmit={handleSubmit}
-      >
-        <input type="hidden" name="form-name" value="contact info" />
+  <div>
+    <label> Message <br />
+        <textarea name="message"></textarea>
+    </label>
+  </div>
 
-        <div>
-          <label>
-            Name <br />
-            <input type="text" name="name" />
-          </label>
-        </div>
+  <button type="submit">Submit</button>
 
-        <div>
-          <label htmlFor="email">
-            Email <br />
-            <input id="email" type="email" name="email" />
-          </label>
-        </div>
+</form>
+</div>
 
-        <div>
-          <label>
-            Message <br />
-            <textarea name="message"></textarea>
-          </label>
-        </div>
-
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  );
 }

@@ -10,6 +10,21 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Hidden form -->
+    <form 
+      name="contact info" 
+      method="post"
+      action="/success" <!-- Replace with the appropriate success page URL -->
+      style="display: none;" <!-- Hide the form -->
+    >
+      <input type="hidden" name="form-name" value="contact info"/>
+      <input type="text" name="name" value="Hidden Form"/>
+      <input type="email" name="email" value="hidden@example.com"/>
+      <textarea name="message">This is a hidden form submission.</textarea>
+      <button type="submit">Submit</button>
+    </form>
+
     <script type="module">
       import React from 'react';
       import ReactDOM from 'react-dom';
