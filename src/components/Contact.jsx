@@ -49,14 +49,13 @@ const Contact = () => {
 
   const handleSubmit = (e, formName) => {
     e.preventDefault();
-  
-    // Add the _gotcha token to the form data
+
     const formDataToSubmit = new FormData(e.target);
     formDataToSubmit.append("_gotcha", "");
-  
+
     if (validate()) {
       e.target.formDataToSubmit = formDataToSubmit;
-  
+
       console.log(formData);
       // Perform further actions, such as sending the data to a server
     }
@@ -102,6 +101,9 @@ const Contact = () => {
           className={`textarea ${errors.message ? "textarea-error" : ""}`}
         />
         {errors.message && <p className="error-message">{errors.message}</p>}
+
+        {/* Add the hidden input field for the _gotcha token */}
+        <input type="hidden" name="_gotcha" />
 
         <button type="submit" className="button">
           Submit
