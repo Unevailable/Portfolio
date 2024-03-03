@@ -1,16 +1,13 @@
 import React from "react";
 import "./Contact.css";
 
-export default function Contact() {
-
-return <div>
-  <form 
-  name="contact info" 
-  method="post"
-  data-netlify="true"
-  onSubmit="submit"
->
-  <input type="hidden" name="form-name" value="contact info"/>
+function Contact(){
+  return ( <div>
+    <form 
+    name="contact info" 
+    action="/contact"
+    method="post"
+    >
 
   <div>
     <label> Name <br />
@@ -25,13 +22,16 @@ return <div>
 
   <div>
     <label> Message <br />
-          <textarea name="message" type="message"></textarea>
+        <textarea name="message"></textarea>
     </label>
   </div>
 
   <button type="submit">Submit</button>
-
-</form>
-</div>
-
+  
+    </form>
+  </div>
+  );
+  
 }
+
+export default Contact;
