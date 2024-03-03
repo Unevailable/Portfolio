@@ -1,4 +1,3 @@
-// Importing React and the CSS module for styling
 import React, { useState } from "react";
 import "./Contact.css";
 
@@ -57,8 +56,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      console.log(formData);
-      // Perform further actions, such as sending the data to a server
+      // You don't need to log formData since Netlify will handle the form submission
     }
   };
 
@@ -72,6 +70,9 @@ const Contact = () => {
         data-netlify="true" // Enable Netlify Forms
         onSubmit={handleSubmit} // Add this line to reference the handleSubmit function
       >
+        {/* Hidden form field for Netlify form name */}
+        <input type="hidden" name="form-name" value="contact" />
+
         {/* Input for Name */}
         <label htmlFor="name">Name:</label>
         <input
