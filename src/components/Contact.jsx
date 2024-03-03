@@ -51,13 +51,12 @@ const Contact = () => {
     e.preventDefault();
 
     if (validate()) {
-      const formDataToSubmit = new FormData(e.target);
-      formDataToSubmit.append("_gotcha", "");
+      // Use the form data directly
+      const formDataToSubmit = { ...formData, _gotcha: "" };
 
-      console.log(formData);
+      console.log(formDataToSubmit);
       // Perform further actions, such as sending the data to a server
-
-      // Optionally, you can use fetch to send the form data to a server
+      // Example: You can use fetch to send the form data to a server
       // fetch("/", {
       //   method: "POST",
       //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
