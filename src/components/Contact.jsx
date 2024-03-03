@@ -47,17 +47,24 @@ const Contact = () => {
     return isValid;
   };
 
-  const handleSubmit = (e, formName) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    const formDataToSubmit = new FormData(e.target);
-    formDataToSubmit.append("_gotcha", "");
-
     if (validate()) {
-      e.target.formDataToSubmit = formDataToSubmit;
+      const formDataToSubmit = new FormData(e.target);
+      formDataToSubmit.append("_gotcha", "");
 
       console.log(formData);
       // Perform further actions, such as sending the data to a server
+
+      // Optionally, you can use fetch to send the form data to a server
+      // fetch("/", {
+      //   method: "POST",
+      //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      //   body: new URLSearchParams(formDataToSubmit).toString(),
+      // })
+      //   .then(() => console.log("Form data submitted successfully"))
+      //   .catch((error) => console.error("Error submitting form data:", error));
     }
   };
 
@@ -68,7 +75,7 @@ const Contact = () => {
         name="contact"
         method="POST"
         data-netlify="true"
-        onSubmit={(e) => handleSubmit(e, "contact")}
+        onSubmit={handleSubmit}
       >
         <label htmlFor="name">Name:</label>
         <input
