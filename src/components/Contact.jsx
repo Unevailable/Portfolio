@@ -8,6 +8,7 @@ return <div>
   name="contact info" 
   method="post"
   data-netlify="true"
+  onSubmit="submit"
 >
   <input type="hidden" name="form-name" value="contact info"/>
 
@@ -24,7 +25,7 @@ return <div>
 
   <div>
     <label> Message <br />
-        <textarea name="message"></textarea>
+          <textarea name="message" type="message"></textarea>
     </label>
   </div>
 
