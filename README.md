@@ -8,10 +8,6 @@ This is a React Portfolio designed to keep a history of Al Amin's projects and a
 
 ## Preview of The Program
 [Portfolio Website](https://main--alamin03-portfolio.netlify.app)
-![Preview of the Website](./vite-project/public/1a.PNG)
-![Preview of the Website](./vite-project/public/2a.PNG)
-![Preview of the Website](./vite-project/public/3a.PNG)
-![Preview of the Website](./vite-project/public/4a.PNG)
 
 ## Table of Contents
 - [Installation](#installation)
