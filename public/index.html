@@ -7,23 +7,23 @@
 </head>
 <body>
     <form 
-    name="contact info" netlify netlify-honeypot="bot-field" hidden>
+    name="contact info" netlify-data="true">
 
   
     <div>
       <label> Name <br />
-          <input type="text" name="name"/>
+          <input type="hidden" name="name"/>
       </label>
     </div>
   
     <div>
       <label htmlFor="email"> Email </label> <br />
-          <input type="email" name="email"/>
+          <input type="hidden" name="email"/>
     </div>
   
     <div>
       <label> Message <br />
-          <textarea name="message"></textarea>
+          <textarea name="message" type="hidden"></textarea>
       </label>
     </div>
   

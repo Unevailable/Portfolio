@@ -4,14 +4,16 @@ import "./Contact.css";
 function Contact(){
   return ( <div>
     <form 
-    name="contact info" 
-    action="/contact"
-    method="post"
+    name="contact" 
+    action="/success"
+    method="POST"
     >
+
+  <input type="hidden" name="form-name" value="contact"/>
 
   <div>
     <label> Name <br />
-        <input type="text" name="name"/>
+        <input type="text" id="name" name="name"/>
     </label>
   </div>
 
