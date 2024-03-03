@@ -70,7 +70,7 @@ const Contact = () => {
     <section className="contact">
       <h2>Contact Me</h2>
       <form
-        name="contact"
+        name="alamin03-portfolio"
         method="POST"
         data-netlify="true"
         onSubmit={handleSubmit}
