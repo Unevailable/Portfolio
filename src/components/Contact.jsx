@@ -1,5 +1,3 @@
-// Contact.jsx
-
 // Importing React and the CSS module for styling
 import React, { useState } from "react";
 import "./Contact.css";
@@ -68,7 +66,12 @@ const Contact = () => {
   return (
     <section className="contact">
       <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
+      <form
+        name="contact" // This is important for Netlify Forms
+        method="POST"
+        data-netlify="true" // Enable Netlify Forms
+        onSubmit={handleSubmit} // Add this line to reference the handleSubmit function
+      >
         {/* Input for Name */}
         <label htmlFor="name">Name:</label>
         <input
