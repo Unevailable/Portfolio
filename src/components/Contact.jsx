@@ -68,33 +68,49 @@ const Contact = () => {
       <h2>Contact Me</h2>
       <form
         name="contact" // This is important for Netlify Forms
-        netlify // Netlify will automatically detect this form
+        method="POST"
+        data-netlify="true" // Enable Netlify Forms
         onSubmit={handleSubmit} // Add this line to reference the handleSubmit function
       >
         {/* Input for Name */}
-        <p>
-          <label htmlFor="name">Name: <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} /></label>
-          {errors.name && <p className="error-message">{errors.name}</p>}
-        </p>
+        <label htmlFor="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          className={`input ${errors.name ? "input-error" : ""}`}
+        />
+        {errors.name && <p className="error-message">{errors.name}</p>}
 
         {/* Input for Email */}
-        <p>
-          <label htmlFor="email">Email: <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} /></label>
-          {errors.email && <p className="error-message">{errors.email}</p>}
-        </p>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          className={`input ${errors.email ? "input-error" : ""}`}
+        />
+        {errors.email && <p className="error-message">{errors.email}</p>}
 
         {/* Textarea for Message */}
-        <p>
-          <label htmlFor="message">Message: <textarea id="message" name="message" value={formData.message} onChange={handleChange} /></label>
-          {errors.message && <p className="error-message">{errors.message}</p>}
-        </p>
+        <label htmlFor="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          className={`textarea ${errors.message ? "textarea-error" : ""}`}
+        />
+        {errors.message && <p className="error-message">{errors.message}</p>}
 
         {/* Submit button */}
-        <p>
-          <button type="submit" className="button">
-            Submit
-          </button>
-        </p>
+        <button type="submit" className="button">
+          Submit
+        </button>
       </form>
     </section>
   );
