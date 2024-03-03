@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import styles from "./Contact.css"; // Import the CSS module
+import "./Contact.css";
 
-// Functional component for the Contact form
 const Contact = () => {
-  // State for form data and errors
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -16,12 +14,10 @@ const Contact = () => {
     message: "",
   });
 
-  // Function to handle changes in form fields
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Validation function to check form data
   const validate = () => {
     let tempErrors = {};
     let isValid = true;
@@ -47,31 +43,34 @@ const Contact = () => {
       isValid = false;
     }
 
-    // Set errors and return validation status
     setErrors(tempErrors);
     return isValid;
   };
 
-  // Function to handle form submission
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, formName) => {
     e.preventDefault();
     if (validate()) {
+      const formDataToSubmit = new FormData();
+      formDataToSubmit.append("name", formData.name);
+      formDataToSubmit.append("email", formData.email);
+      formDataToSubmit.append("message", formData.message);
+
+      e.target.formDataToSubmit = formDataToSubmit;
+
       console.log(formData);
       // Perform further actions, such as sending the data to a server
     }
   };
 
-  // JSX for the Contact form component
   return (
-    <section className={styles.contact}>
+    <section className="contact">
       <h2>Contact Me</h2>
       <form
-        name="contact" // This is important for Netlify Forms
+        name="contact"
         method="POST"
-        data-netlify="true" // Enable Netlify Forms
-        onSubmit={handleSubmit} // Add this line to reference the handleSubmit function
+        data-netlify="true"
+        onSubmit={(e) => handleSubmit(e, "contact")}
       >
-        {/* Input for Name */}
         <label htmlFor="name">Name:</label>
         <input
           type="text"
@@ -79,11 +78,10 @@ const Contact = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className={`${styles.input} ${errors.name ? styles.inputError : ""}`}
+          className={`input ${errors.name ? "input-error" : ""}`}
         />
-        {errors.name && <p className={styles.errorMessage}>{errors.name}</p>}
+        {errors.name && <p className="error-message">{errors.name}</p>}
 
-        {/* Input for Email */}
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -91,23 +89,21 @@ const Contact = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className={`${styles.input} ${errors.email ? styles.inputError : ""}`}
+          className={`input ${errors.email ? "input-error" : ""}`}
         />
-        {errors.email && <p className={styles.errorMessage}>{errors.email}</p>}
+        {errors.email && <p className="error-message">{errors.email}</p>}
 
-        {/* Textarea for Message */}
         <label htmlFor="message">Message:</label>
         <textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className={`${styles.textarea} ${errors.message ? styles.textareaError : ""}`}
+          className={`textarea ${errors.message ? "textarea-error" : ""}`}
         />
-        {errors.message && <p className={styles.errorMessage}>{errors.message}</p>}
+        {errors.message && <p className="error-message">{errors.message}</p>}
 
-        {/* Submit button */}
-        <button type="submit" className={styles.button}>
+        <button type="submit" className="button">
           Submit
         </button>
       </form>
@@ -115,5 +111,4 @@ const Contact = () => {
   );
 };
 
-// Exporting the Contact component for use in other parts of the application
-export default Contact
+export default Contact;
