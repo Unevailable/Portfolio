@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Contact.css";
+import styles from "./Contact.css"; // Import the CSS module
 
 // Functional component for the Contact form
 const Contact = () => {
@@ -56,13 +56,14 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      // You don't need to log formData since Netlify will handle the form submission
+      console.log(formData);
+      // Perform further actions, such as sending the data to a server
     }
   };
 
   // JSX for the Contact form component
   return (
-    <section className="contact">
+    <section className={styles.contact}>
       <h2>Contact Me</h2>
       <form
         name="contact" // This is important for Netlify Forms
@@ -70,9 +71,6 @@ const Contact = () => {
         data-netlify="true" // Enable Netlify Forms
         onSubmit={handleSubmit} // Add this line to reference the handleSubmit function
       >
-        {/* Hidden form field for Netlify form name */}
-        <input type="hidden" name="form-name" value="contact" />
-
         {/* Input for Name */}
         <label htmlFor="name">Name:</label>
         <input
@@ -81,9 +79,9 @@ const Contact = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className={`input ${errors.name ? "input-error" : ""}`}
+          className={`${styles.input} ${errors.name ? styles.inputError : ""}`}
         />
-        {errors.name && <p className="error-message">{errors.name}</p>}
+        {errors.name && <p className={styles.errorMessage}>{errors.name}</p>}
 
         {/* Input for Email */}
         <label htmlFor="email">Email:</label>
@@ -93,9 +91,9 @@ const Contact = () => {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className={`input ${errors.email ? "input-error" : ""}`}
+          className={`${styles.input} ${errors.email ? styles.inputError : ""}`}
         />
-        {errors.email && <p className="error-message">{errors.email}</p>}
+        {errors.email && <p className={styles.errorMessage}>{errors.email}</p>}
 
         {/* Textarea for Message */}
         <label htmlFor="message">Message:</label>
@@ -104,12 +102,12 @@ const Contact = () => {
           name="message"
           value={formData.message}
           onChange={handleChange}
-          className={`textarea ${errors.message ? "textarea-error" : ""}`}
+          className={`${styles.textarea} ${errors.message ? styles.textareaError : ""}`}
         />
-        {errors.message && <p className="error-message">{errors.message}</p>}
+        {errors.message && <p className={styles.errorMessage}>{errors.message}</p>}
 
         {/* Submit button */}
-        <button type="submit" className="button">
+        <button type="submit" className={styles.button}>
           Submit
         </button>
       </form>
@@ -118,4 +116,4 @@ const Contact = () => {
 };
 
 // Exporting the Contact component for use in other parts of the application
-export default Contact;
+export default Contact
