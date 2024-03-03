@@ -21,9 +21,11 @@ const Header = () => {
           Portfolio
         </Link>
         {/* Link to the Contact section */}
+        {/* 
         <Link to="/contact" className={styles.link}>
           Contact
-        </Link>
+        </Link> 
+        */}
         {/* Link to the Resume section */}
         <Link to="/resume" className={styles.link}>
           Resume
