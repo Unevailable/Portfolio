@@ -16,7 +16,7 @@ const AboutMe = () => {
       <div className={style.textContainer}>
         {/* Paragraph describing the individual */}
         <p className={style.text}>
-          Greetings! I'm Al Amin, aspiring to become a proficient full-stack developer. My journey commenced in high school, where I delved into crafting webpages using HTML, CSS, and JS, even participating in various webpage competitions. As I progressed through college, my focus shifted to backend development, immersing myself in languages like C and Python. My ultimate aspiration is to leverage my coding expertise to contribute to the realm of space exploration.
+          Greetings! I'm Al Amin, aspiring to become a proficient full-stack developer. My journey commenced in high school, where I delved into crafting webpages using HTML, CSS, and JS, even participating in various webpage competitions. As I progressed through college, my focus shifted to backend development, immersing myself in languages like C and Python. I plan to use my coding experience to help explore space. Besides coding, I love riding motorcycles, working on project cars, playing video games, soccer, lacrosse, and occasionally rock climbing. Currently, I ride a Ninja 400 and the project car I'm starting is an MK3 Toyota Supra. Leading to my sports life, I've played in various travel teams. I play left wing and midfielder for soccer and at times I have been a captain for this coming season I will be a co-captain. For lacrosse, I play midfielder and forward.    
         </p>
 
         {/* Image of the individual */}
