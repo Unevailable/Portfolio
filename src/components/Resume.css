@@ -1,48 +1,115 @@
 .resume-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.Resume-Heading {
+  position: relative;
+  top: 5px;
+  left: 79.5vh;
+  margin-bottom: 20px;
+}
+
+.resume-subheading {
+  position: relative;
+  top: 15vh;
+  left: 41.5vh;
+  margin-bottom: 20px;
+}
+
+.resume-backend {
+  position: relative;
+  bottom: 15vh;
+  left: 15vh;
+}
+
+.resume-frontend {
+  position: relative;
+  bottom: 15vh;
+  left: 15vh;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.backend-skills-section {
+  position: relative;
+  left: 65vh;
+}
+
+.frontend-skills-section {
+  position: relative;
+  left: 45vh;
+}
+
+/* Mobile-specific styles */
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+  .resume-section {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    height: auto; /* Adjust height for mobile content */
+    text-align: center; /* Center content on mobile */
+    align-items: center; /* Align items to the center */
   }
-  
-  h2 {
+
+  .Resume-Heading,
+  .resume-subheading,
+  .resume-backend,
+  .resume-frontend,
+  .backend-skills-section,
+  .frontend-skills-section {
+    position: static; /* Remove positioning for mobile */
+    left: auto; /* Remove left offset for mobile */
+    margin-left: auto;
+    margin-right: auto; /* Shift everything to the right by 20px */
+  }
+
+  li {
+    list-style: none; /* Remove bullet points on mobile */
+    margin-bottom: 5px;
+  }
+
+  .Resume-Heading {
     position: relative;
-    top: 5px;
-    left: 79.5vh;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Adjusted margin for spacing */
+    left: 9vh;
+    top: 30vh;
   }
-  
+
   .resume-subheading {
     position: relative;
-    top: 15vh;
-    left: 41.5vh;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Adjusted margin for spacing */
+    left: 9vh;
   }
-  
+
   .resume-backend {
     position: relative;
-    bottom: 15vh;
-    left: 15vh;
+    left: 3vh; /* Shift everything to the right by 20px */
+    top: 3vh;
   }
 
   .resume-frontend {
     position: relative;
+    left: 3vh; /* Shift everything to the right by 20px */
+    top: 3vh;
+  }
+
+  .backend-skills-section {
+    position: relative;
+    left: 6vh; /* Shift everything to the right by 20px */
     bottom: 15vh;
-    left: 15vh;
-  }
-  
-  li {
-    margin-bottom: 5px;
+
   }
 
-    .backend-skills-section {
-        position: relative;
-        left: 65vh;
-    }
+  .frontend-skills-section {
+    position: relative;
+    left: 6vh; /* Shift everything to the right by 20px */
 
-    .frontend-skills-section {
-        position: relative;
-        left: 45vh;
-    }
+  }
+
+}
