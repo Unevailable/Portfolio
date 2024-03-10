@@ -10,7 +10,7 @@ section {
 /* Style for the heading within a section */
 .heading {
   position: relative;
-  top: 15vh; /* Adjusting the heading position */
+  top: 5vh; /* Adjusting the heading position */
   left: -10px;
   font-size: 2rem;
   margin-bottom: 20px;
@@ -31,7 +31,7 @@ section div {
 section p {
   position: relative;
   left: 20vh; /* Adjusting the text position */
-  text-align: left;
+  text-align: center;
   font-size: 1.125rem;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -51,7 +51,7 @@ section p {
 @media (max-width: 768px) {
   section {
     padding: 20px;
-    min-height: 150vh;
+    min-height: 165vh;
   }
 
   .heading {
