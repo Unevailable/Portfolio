@@ -9,7 +9,7 @@ const Resume = () => {
         <h2 className="Resume-Heading" >Resume</h2>
       </div>
       <div className="download-section">
-        <a href="./public/Resume-AlAmin.pdf" download>
+        <a href="https://alamin03-portfolio.netlify.app/Resume-AlAmin.pdf" download>
           <h3 className="resume-subheading">Download my resume</h3>
         </a>
       </div>
