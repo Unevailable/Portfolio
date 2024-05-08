@@ -19,7 +19,7 @@ const Portfolio = () => {
       id: 2,
       name: 'The Birds of Freedom',
       image: '../freedom.PNG',
-      description: 'The main focus of this website is to inform people about the Bangladesh Liberation War. This frontend website was showcased at the 2022 Ctrl+Shift Finals',
+      description: 'The main focus of this website is to inform people about the Bangladesh Liberation War. This frontend website was showcased at the 2021 Ctrl+Shift Finals',
       languages: ['HTML', 'CSS', 'JavaScript'],
       github: 'https://github.com/Unevailable/TheBirdsOfFreedom',
       site: 'https://unevailable.github.io/TheBirdsOfFreedom/index.html',
