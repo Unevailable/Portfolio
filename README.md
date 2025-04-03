@@ -4,7 +4,7 @@
 
 
 ## Description
-This is a React Portfolio designed to keep a history of Al Amin's projects and accomplishments.
+This is a React Portfolio designed to keep a history of Al Amin's projects and accomplishments. THIS IS STILL IN BETA.
 
 ## Preview of The Program
 [Portfolio Website](https://main--alamin03-portfolio.netlify.app)
